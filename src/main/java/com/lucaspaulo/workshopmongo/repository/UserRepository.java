@@ -1,0 +1,9 @@
+package com.lucaspaulo.workshopmongo.repository;
+
+import com.lucaspaulo.workshopmongo.domain.User;
+import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface UserRepository extends MongoRepository<User, String> {
+}
